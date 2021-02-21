@@ -19,7 +19,7 @@ if (DefaultNativePlatform.getCurrentOperatingSystem().isWindows()) {
 } else if (DefaultNativePlatform.getCurrentOperatingSystem().isLinux()) {
     process = "stat -c %g /var/run/docker.sock".execute()
 } else {
-    process = "stat -f %g /var/run/docker.sock".execute()
+    process = "sudo chmod 777 /var/run/docker.sock stat -f %g /var/run/docker.sock".execute()
 }
 def out = new ByteArrayOutputStream()
 process.waitForProcessOutput(out, System.err)
