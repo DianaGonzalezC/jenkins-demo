@@ -20,9 +20,9 @@ pipelineJob('theme-park-job') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/DianaGonzalezC/springbootapptest.git'
+                        url 'https://github.com/tkgregory/spring-boot-api-example.git'
                     }
-                    branch 'main'
+                    branch 'master'
                 }
             }
         }
@@ -34,9 +34,9 @@ pipelineJob('theme-park-job-docker') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/DianaGonzalezC/springbootapptest.git'
+                        url 'https://github.com/tkgregory/spring-boot-api-example.git'
                     }
-                    branch 'main'
+                    branch 'master'
                 }
             }
         }
